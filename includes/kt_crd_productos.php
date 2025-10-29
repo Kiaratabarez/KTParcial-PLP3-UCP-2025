@@ -1,4 +1,10 @@
 <?php
+
+/*
+Estescript es el panel administrativo que permite realizar las operaciones
+CRUD sobre la tabla kt_productos: listar, agregar, editar y
+eliminar productos desde la interfaz web.
+*/
 include("kt_conexion.php");
 
 // Leer productos

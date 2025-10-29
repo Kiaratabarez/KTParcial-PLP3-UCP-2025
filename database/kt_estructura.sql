@@ -1,6 +1,13 @@
 CREATE DATABASE IF NOT EXISTS kt_parcial_plp3;
 USE kt_parcial_plp3;
 
+CREATE TABLE kt_productos (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nombre VARCHAR(100),
+precio DECIMAL(10,2),
+categoria VARCHAR(50)
+);
+
 CREATE TABLE kt_pedidos (
 id INT AUTO_INCREMENT PRIMARY KEY,
 nombre VARCHAR(100),

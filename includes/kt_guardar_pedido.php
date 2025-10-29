@@ -1,4 +1,9 @@
 <?php
+/*
+Este Script recibe los datos del formulario de pedido (nombre, dirección
+y lista de productos) desde el frontend, los convierte a JSON
+y los guarda en la tabla kt_pedidos de la base de datos.
+*/
 include("kt_conexion.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
