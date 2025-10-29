@@ -1,0 +1,44 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { background: #ffe89e; padding: 10px; }
+
+.kt-header { text-align: center; background: #ff7043; color: #fff; padding: 10px; border-radius: 10px; }
+
+.kt-filtro, .kt-menu, .kt-carrito, .kt-checkout {
+margin: 15px 0; padding: 10px; background: #fff; border-radius: 8px;
+}
+
+.kt-menu {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+gap: 10px;
+}
+
+.kt-item {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: center;
+border-radius: 8px;
+background: #fffef9;
+}
+
+.kt-item button {
+background: #f04a17;
+color: white;
+border: none;
+padding: 5px 10px;
+margin-top: 5px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.kt-item button:hover {
+background: #ff5722;
+}
+.kt_agregar button:hover {
+    background: #ff2222; 
+}
+
+
+@media (max-width: 600px) {
+.kt-menu { grid-template-columns: 1fr; }
+}

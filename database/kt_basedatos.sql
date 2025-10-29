@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS kt_parcial_plp3;
+USE kt_parcial_plp3;
+
+CREATE TABLE kt_pedidos (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nombre VARCHAR(100),
+direccion VARCHAR(200),
+pedido_json TEXT,
+fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
