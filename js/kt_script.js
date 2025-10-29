@@ -1,3 +1,10 @@
+/*
+En este script se implementa la interactividad del sistema FoodExpress, donde permite mostrar y filtrar productos, gestionar el carrito de compras
+dinámico (agregar, eliminar, calcular subtotales) y actualizar el total
+sin recargar la página, garantizando una experiencia fluida para el usuario.
+*/
+
+
 const productos = [
 { id: 1, nombre: "Pizza Cuatro Quesos", precio: 1500, categoria: "pizzas" },
 { id: 2, nombre: "Pizza Napolitana", precio: 1600, categoria: "pizzas" },
@@ -64,3 +71,15 @@ mostrarProductos(productos.filter(p => p.categoria === cat));
 }
 
 mostrarProductos(productos);
+document.addEventListener("DOMContentLoaded", () => {
+const toggle = document.querySelector(".kt-menu-toggle");
+const nav = document.querySelector(".kt-nav");
+
+toggle.addEventListener("click", () => {
+nav.classList.toggle("show");
+});
+});
+
+document.getElementById('menu').classList.add('kt-loading');
+document.getElementById('menu').classList.remove('kt-loading');
+

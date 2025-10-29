@@ -38,6 +38,91 @@ background: #ff5722;
     background: #ff2222; 
 }
 
+.kt-item, .kt-item button, .kt-nav a {
+transition: all 0.3s ease;
+}
+
+.kt-item:hover {
+transform: scale(1.03);
+box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+.kt-item button:focus, .kt-nav a:focus {
+outline: 2px solid #fff;
+outline-offset: 3px;
+}
+
+
+.kt-nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+.kt-nav a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+.kt-nav a:hover {
+text-decoration: underline;
+}
+
+/* hamburguesa*/
+.kt-menu-toggle {
+display: none;
+background: none;
+border: none;
+font-size: 28px;
+color: white;
+cursor: pointer;
+}
+
+@media (max-width: 768px) {
+.kt-nav {
+display: none;
+flex-direction: column;
+background: #ff7043;
+position: absolute;
+top: 60px;
+left: 0;
+right: 0;
+text-align: center;
+padding: 10px;
+border-radius: 0 0 10px 10px;
+}
+
+.kt-nav.show {
+display: flex;
+}
+
+.kt-menu-toggle {
+display: block;
+position: absolute;
+top: 10px;
+right: 15px;
+}
+}
+
+.kt-loading {
+position: relative;
+opacity: 0.6;
+pointer-events: none;
+}
+
+.kt-loading::after {
+content: "Cargando...";
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: rgba(255, 255, 255, 0.9);
+color: #ff7043;
+font-weight: bold;
+padding: 8px 12px;
+border-radius: 8px;
+}
 
 @media (max-width: 600px) {
 .kt-menu { grid-template-columns: 1fr; }

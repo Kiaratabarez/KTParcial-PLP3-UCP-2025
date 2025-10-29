@@ -10,6 +10,16 @@
 
 <header class="kt-header">
 <h1>🍕 FoodExpress</h1>
+<button class="kt-menu-toggle" aria-label="Abrir menú">☰</button>
+<nav class="kt-nav">
+<ul>
+    <li><a href="#menu">Menú</a></li>
+    <li><a href="#carrito">Carrito</a></li>
+    <li><a href="#checkout">Checkout</a></li>
+</ul>
+</nav>
+</header>
+
 </header>
 
 <!--filtros-->
@@ -28,7 +38,7 @@
 
 <!-- Carrito-->
 <section class="kt-carrito">
-<h2>🛒 Tu Carrito</h2>
+<h2>Tu Carrito</h2>
 <ul id="lista-carrito"></ul>
 <p>Total: $<span id="total">0</span></p>
 <button onclick="kt_vaciarCarrito()">Vaciar carrito</button>
