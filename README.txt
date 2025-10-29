@@ -8,7 +8,7 @@ Fecha: 29/10/2025
 
 Descripción General
 FoodExpress es un sistema web que permite visualizar un menú digital, agregar productos a un carrito de compras y generar pedidos de forma dinámica.  
-El proyecto fue desarrollado como parte del **Parcial PLP3**, aplicando tecnologías **HTML, CSS, JavaScript y PHP con MySQL**.
+El proyecto fue desarrollado como parte del Parcial PLP3, aplicando tecnologías HTML, CSS, JavaScript y PHP con MySQL.
 
 Funcionalidades Principales
 - Visualización del menú con categorías (pizzas, bebidas, postres).  
